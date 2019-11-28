@@ -6,4 +6,8 @@ public class MaximumNumber {
     public Double findMaxDoubleNumber(Double v, Double v1, Double v2) {
         return v.compareTo(v1)>0?v:v1.compareTo(v2)>0?v1:v2;
     }
+
+    public String findMaxString(String anish, String suraj, String zafar) {
+        return anish.compareTo(suraj)>0?anish:suraj.compareTo(zafar)>0?suraj:zafar;
+    }
 }

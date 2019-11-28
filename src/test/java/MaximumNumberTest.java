@@ -27,4 +27,17 @@ public class MaximumNumberTest {
         Double doubleNumber2 = maximumNumber.findMaxDoubleNumber(1.1, 3.2, 3.2);
         Assert.assertEquals(new Double(3.2),doubleNumber2);
     }
+
+    @Test
+    public void given3StringWillReturnGreaterStringAmong3() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        String maxString = maximumNumber.findMaxString("anish", "suraj", "zafar");
+        Assert.assertEquals("zafar",maxString);
+
+        String maxString1 = maximumNumber.findMaxString("zafar", "suraj", "anish");
+        Assert.assertEquals("zafar",maxString1);
+
+        String maxString2 = maximumNumber.findMaxString("anish", "zafar", "suraj");
+        Assert.assertEquals("zafar",maxString2);
+    }
 }
