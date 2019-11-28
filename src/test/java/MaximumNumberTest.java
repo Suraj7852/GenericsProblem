@@ -15,4 +15,16 @@ public class MaximumNumberTest {
         Assert.assertEquals(new Integer(12),maxNumber2);
     }
 
+    @Test
+    public void given3FloatNumberWillReturnGreaterNumberAmong3() {
+        MaximumNumber maximumNumber = new MaximumNumber();
+        Double doubleNumber = maximumNumber.findMaxDoubleNumber(1.1, 2.2, 3.2);
+        Assert.assertEquals(new Double(3.2),doubleNumber);
+
+        Double doubleNumber1 = maximumNumber.findMaxDoubleNumber(3.2, 2.2, 1.1);
+        Assert.assertEquals(new Double(3.2),doubleNumber1);
+
+        Double doubleNumber2 = maximumNumber.findMaxDoubleNumber(1.1, 3.2, 3.2);
+        Assert.assertEquals(new Double(3.2),doubleNumber2);
+    }
 }
