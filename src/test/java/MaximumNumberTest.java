@@ -10,7 +10,7 @@ public class MaximumNumberTest {
         Integer maxNumber1 = MaximumNumber.findMaximum(6,10,2);
         Assert.assertEquals(new Integer(10),maxNumber1);
 
-        Integer maxNumber2 = (Integer) MaximumNumber.findMaximum(6,8,19);
+        Integer maxNumber2 = MaximumNumber.findMaximum(6,8,19);
         Assert.assertEquals(Integer.valueOf(19),maxNumber2);
    }
 

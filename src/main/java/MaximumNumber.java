@@ -1,8 +1,12 @@
-public class MaximumNumber<E extends Comparable>  {
-    E intNumber;
+public class MaximumNumber<X,Y,Z extends Comparable>  {
+    X intNumber;
+    Y doubleNumber;
+    Z stringValue;
 
-    public MaximumNumber(E intNumber) {
+    public MaximumNumber(X intNumber, Y doubleNumber, Z stringValue) {
         this.intNumber = intNumber;
+        this.doubleNumber = doubleNumber;
+        this.stringValue = stringValue;
     }
 
     public static <E extends  Comparable> E findMaximum(E i, E i1, E i2) {
