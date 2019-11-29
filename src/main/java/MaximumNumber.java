@@ -1,17 +1,21 @@
-public class MaximumNumber<X,Y,Z extends Comparable>  {
-    X intNumber;
-    Y doubleNumber;
-    Z stringValue;
+import java.util.Arrays;
 
-    public MaximumNumber(X intNumber, Y doubleNumber, Z stringValue) {
-        this.intNumber = intNumber;
-        this.doubleNumber = doubleNumber;
-        this.stringValue = stringValue;
+public class MaximumNumber<X extends Comparable>  {
+    X[] arr;
+
+    public MaximumNumber(X... value) {
+        X[] arrayObject =(X[]) new Comparable[value.length];
+        int i=0;
+        for (X val : value) {
+            arrayObject[i++] = val;
+        }
+        this.arr = arrayObject;
     }
 
-    public static <E extends  Comparable> E findMaximum(E i, E i1, E i2) {
-        E max;
-        max = (i.compareTo(i1)>0?i:i1.compareTo(i2)>0?i1:i2);
+    public X findMaximum() {
+        Arrays.sort(arr);
+        X max;
+        max = arr[arr.length-1];
         printMax(max);
         return max;
     }

@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MaximumNumberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T12:38:20" hostname="admin1-desktop" time="0.004">
+<testsuite name="MaximumNumberTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T09:33:11" hostname="admin1-desktop" time="0.003">
   <properties/>
   <testcase name="given3StringWillReturnGreaterStringAmong3" classname="MaximumNumberTest" time="0.003"/>
-  <testcase name="given3FloatNumberWillReturnGreaterNumberAmong3" classname="MaximumNumberTest" time="0.0"/>
-  <testcase name="given3NumberWillReturnGreaterNumberAmong3" classname="MaximumNumberTest" time="0.001"/>
   <system-out><![CDATA[zafar
 zafar
 zafar
-3.2
-3.2
-3.2
-9
-10
-19
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
